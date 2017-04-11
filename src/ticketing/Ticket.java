@@ -23,6 +23,7 @@ public class Ticket {
 	private String solutionDescription;
 
 	public Ticket(User reporter, String path, String description, Severity severity) {
+		this.reporter = reporter;
 		this.description = description;
 		this.severity = severity;
 		this.path = path;

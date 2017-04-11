@@ -46,8 +46,16 @@ public class Example {
         
         System.out.println("User " + t.getAuthor() + " created ticket " + t.getId() + " on component " + t.getComponent());
         
-        ts.assignTicket(id, "delta");
-        ts.closeTicket(id, "The user had the network cable unplugged...");
+        ts.assignTicket(1, "delta");
+        ts.assignTicket(2, "delta");
+        ts.assignTicket(3, "epsilon");
+        ts.assignTicket(4, "gamma");
+        ts.assignTicket(5, "delta");
+        ts.closeTicket(1, "The user had the network cable unplugged...");
+        ts.closeTicket(2, "The user had the network cable unplugged...");
+        ts.closeTicket(3, "The user had the network cable unplugged...");
+        ts.closeTicket(4, "The user had the network cable unplugged...");
+        ts.closeTicket(5, "The user had the network cable unplugged...");
         
         System.out.println("The ticket status is " + t.getState() + " solution: " + t.getDescription());
         
